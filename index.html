@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script>
+        function checkWindowSize() {
+            if (window.innerWidth < 732) {
+                window.location.replace('404.html');
+            }
+        }
+        window.addEventListener('DOMContentLoaded', checkWindowSize);
+        window.addEventListener('resize', checkWindowSize);
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+        <h2>Sandip Saha</h2>
+        <ul class="navbar_list">
+            <li><img class="logo" src="https://img.icons8.com/fluency-systems-filled/96/home.png" alt="home"/><a href="#home">Home</a></li>
+            <li><img class="logo" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/><a href="#search">Search</a></li>
+            <li><img class="logo" src="https://img.icons8.com/ios/50/compass--v1.png" alt="compass--v1"/><a href="#explore">Explore</a></li>
+            <li><img class="logo" src="https://img.icons8.com/ios/50/instagram-reel.png" alt="instagram-reel"/><a href="#reels">Reels</a></li>
+            <li><img class="logo" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/><a href="#messages">Messages</a></li>
+            <li><img class="logo" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/><a href="#notifications">Notifications</a></li>
+            <li><img src="logo.jpg" alt="logo" class="logo"><a href="#profile">Profile</a></li>
+        </ul>
+        <ul class="navbar_list_1">
+            <li><img class="logo" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/><a href="https://www.linkedin.com/in/sandip-saha-880ba3239/" target="_blank">Linkedin</a></li>
+            <li><img class="logo" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/><a href="https://github.com/Sandip040401?tab=repositories" target="_blank">github</a></li>
+        </ul>
+    </div>
+        <hr>
+    <div class="post-content">
+            <div class="top">
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
+                    </div>
+                    <p>Home</p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="post-container">
+                    <div class="post-header">
+                        <a href="#home"><img class="user-avatar" src="logo.jpg" alt="User Avatar"></a>
+                        <a href="#home"><div class="username">username</div></a>
+                        <img class="blue-tick" src="https://img.icons8.com/ios-filled/50/228BE6/approval.png" alt="approval"/>
+                        <img class="dot" src="https://img.icons8.com/ios-glyphs/30/737373/full-stop--v2.png" alt="full-stop--v2"/>
+                        <span class="time">15 min</span>
+                        <a href="#home"><img class="options" src="https://img.icons8.com/ios-filled/100/1A1A1A/ellipsis.png" alt="ellipsis"/></a>
+                    </div>
+                    <img class="post-image" src="logo.jpg" alt="Post Image">
+                    <div class="post-footer">
+                        <img class="love" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/>
+                        <img class="reply" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/1A1A1A/external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" alt="external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah"/>
+                        <img class="reply" src="https://img.icons8.com/ios/100/1A1A1A/sent--v1.png" alt="sent--v1"/>
+                        <img class="bookmark" src="https://img.icons8.com/windows/96/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
+                    </div>
+                    <div class="likes">4042001 likes</div>
+                    <div id="comments-container">
+                        <div class="comment">Awesome pic! 👌</div>
+                        <div class="comment">Love it! ❤️</div>
+                        <div class="comment">Great shot! 📸</div>
+                        <input type="text" id="comment-input" placeholder="Add a comment..." onkeypress="handleKeyPress(event)">
+                    </div>
+                </div>
+
+                <div id="ping" class="post-container">
+                    <div class="post-header">
+                        <a href="#home"><img class="user-avatar" src="pingpong.png" alt="User Avatar"></a>
+                        <a href="https://pingponggame01.netlify.app/" target="_blank"><div class="username">pingpong</div></a>
+                        <img class="blue-tick" src="https://img.icons8.com/ios-filled/50/228BE6/approval.png" alt="approval"/>
+                        <img class="dot" src="https://img.icons8.com/ios-glyphs/30/737373/full-stop--v2.png" alt="full-stop--v2"/>
+                        <span class="time">15 min</span>
+                        <a href="#home"><img class="options" src="https://img.icons8.com/ios-filled/100/1A1A1A/ellipsis.png" alt="ellipsis"/></a>
+                    </div>
+                    <img class="post-image" src="pingpong.png" alt="Post Image">
+                    <div class="post-footer">
+                        <img class="love" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/>
+                        <img class="reply" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/1A1A1A/external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" alt="external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah"/>
+                        <img class="reply" src="https://img.icons8.com/ios/100/1A1A1A/sent--v1.png" alt="sent--v1"/>
+                        <img class="bookmark" src="https://img.icons8.com/windows/96/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
+                    </div>
+                    <div class="likes">4042001 likes</div>
+                    <div id="comments-container">
+                        <div class="comment">Awesome pic! 👌</div>
+                        <div class="comment">Love it! ❤️</div>
+                        <div class="comment">Great shot! 📸</div>
+                        <input type="text" id="comment-input" placeholder="Add a comment..." onkeypress="handleKeyPress(event)">
+                    </div>
+                </div>
+
+                <div id="music" class="post-container">
+                    <div class="post-header">
+                        <a href="#home"><img class="user-avatar" src="music_logo.png" alt="User Avatar"></a>
+                        <a href="https://pingponggame01.netlify.app/" target="_blank"><div class="username">musicplayer</div></a>
+                        <img class="blue-tick" src="https://img.icons8.com/ios-filled/50/228BE6/approval.png" alt="approval"/>
+                        <img class="dot" src="https://img.icons8.com/ios-glyphs/30/737373/full-stop--v2.png" alt="full-stop--v2"/>
+                        <span class="time">15 min</span>
+                        <a href="#home"><img class="options" src="https://img.icons8.com/ios-filled/100/1A1A1A/ellipsis.png" alt="ellipsis"/></a>
+                    </div>
+                    <img class="post-image" src="musicplayer.png" alt="Post Image">
+                    <div class="post-footer">
+                        <img class="love" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/>
+                        <img class="reply" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/1A1A1A/external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" alt="external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah"/>
+                        <img class="reply" src="https://img.icons8.com/ios/100/1A1A1A/sent--v1.png" alt="sent--v1"/>
+                        <img class="bookmark" src="https://img.icons8.com/windows/96/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
+                    </div>
+                    <div class="likes">4042001 likes</div>
+                    <div id="comments-container">
+                        <div class="comment">Awesome pic! 👌</div>
+                        <div class="comment">Love it! ❤️</div>
+                        <div class="comment">Great shot! 📸</div>
+                        <input type="text" id="comment-input" placeholder="Add a comment..." onkeypress="handleKeyPress(event)">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="section">
+
+    </div>
+</div>
+<script>
+
+    function handleKeyPress(event) {
+            var keyCode = event.keyCode || event.which;
+
+            // Check if the pressed key is Enter (keyCode 13)
+            if (keyCode === 13) {
+                event.preventDefault(); // Prevent the default behavior (form submission)
+
+                var commentInput = document.getElementById('comment-input');
+                var commentText = commentInput.value;
+
+                if (commentText.trim() !== '') {
+                    var commentsContainer = document.getElementById('comments-container');
+                    var newComment = document.createElement('div');
+                    newComment.className = 'comment';
+                    newComment.textContent = commentText;
+
+                    // Insert the new comment at the beginning of the container
+                    commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+
+                    commentInput.value = ''; // Clear the input field after posting
+                }
+            }
+        }
+</script>
+</body>
+</html>
