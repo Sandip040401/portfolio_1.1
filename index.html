@@ -15,6 +15,28 @@
         }
         window.addEventListener('DOMContentLoaded', checkWindowSize);
         window.addEventListener('resize', checkWindowSize);
+        document.addEventListener('DOMContentLoaded', function () {
+        var searchLink = document.querySelector('.navbar_list a[href="#search"]');
+        var navbar = document.querySelector('.navbar');
+
+        searchLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            navbar.classList.toggle('collapsed');
+
+            // Load the additional CSS file when the navbar is collapsed
+            if (navbar.classList.contains('collapsed')) {
+                loadCSS('collapse.css');
+            }
+        });
+
+        function loadCSS(href) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = href;
+            document.head.appendChild(link);
+        }
+    });
     </script>
 </head>
 <body>
@@ -24,17 +46,17 @@
     <div class="navbar">
         <h2>Sandip Saha</h2>
         <ul class="navbar_list">
-            <li><img class="logo" src="https://img.icons8.com/fluency-systems-filled/96/home.png" alt="home"/><a href="#home">Home</a></li>
-            <li><img class="logo" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/><a href="#search">Search</a></li>
-            <li><img class="logo" src="https://img.icons8.com/ios/50/compass--v1.png" alt="compass--v1"/><a href="#explore">Explore</a></li>
-            <li><img class="logo" src="https://img.icons8.com/ios/50/instagram-reel.png" alt="instagram-reel"/><a href="#reels">Reels</a></li>
-            <li><img class="logo" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/><a href="#messages">Messages</a></li>
-            <li><img class="logo" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/><a href="#notifications">Notifications</a></li>
-            <li><img src="logo.jpg" alt="logo" class="logo"><a href="#profile">Profile</a></li>
+            <a href="#home"><li><img class="logo" src="https://img.icons8.com/fluency-systems-filled/96/home.png" alt="home"/><p>Home</p></li></a>
+            <a href="#search"><li><img class="logo" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/><p>Search</p></li></a>
+            <a href="#explore"><li><img class="logo" src="https://img.icons8.com/ios/50/compass--v1.png" alt="compass--v1"/><p>Explore</p></li></a>
+            <a href="#reels"><li><img class="logo" src="https://img.icons8.com/ios/50/instagram-reel.png" alt="instagram-reel"/><p>Reels</li></p></a>
+            <a href="#messages"><li><img class="logo" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/><p>Messages</p></li></a>
+            <a href="#notifications"><li><img class="logo" src="https://img.icons8.com/material-outlined/96/1A1A1A/filled-like.png" alt="filled-like"/><p>Notifications</p></li></a>
+            <a href="#profile"><li><img src="logo.jpg" alt="logo" class="logo"><p>Profile</p></li></a>
         </ul>
         <ul class="navbar_list_1">
-            <li><img class="logo" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/><a href="https://www.linkedin.com/in/sandip-saha-880ba3239/" target="_blank">Linkedin</a></li>
-            <li><img class="logo" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/><a href="https://github.com/Sandip040401?tab=repositories" target="_blank">github</a></li>
+            <a href="https://www.linkedin.com/in/sandip-saha-880ba3239/" target="_blank"><li><img class="logo" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/><p>Linkedin</p></li></a>
+            <a href="https://github.com/Sandip040401?tab=repositories" target="_blank"><li><img class="logo" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/><p>github</p></li></a>
         </ul>
     </div>
         <hr>
@@ -44,31 +66,31 @@
                     <div class="image">
                         <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
                     </div>
-                    <p>Home</p>
+                    <p>Sandip</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="pingpong.png" alt="" class="image"></a>
+                    </div>
+                    <p>pingpong</p>
                 </div>
                 <div class="status">
                     <div class="image">
                         <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
                     </div>
-                    <p>Home</p>
+                    <p>Sandip</p>
+                </div>
+                <div class="status">
+                    <div class="image">
+                        <a href="#home"><img src="music_logo.png" alt="" class="image"></a>
+                    </div>
+                    <p>musicplayer</p>
                 </div>
                 <div class="status">
                     <div class="image">
                         <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
                     </div>
-                    <p>Home</p>
-                </div>
-                <div class="status">
-                    <div class="image">
-                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
-                    </div>
-                    <p>Home</p>
-                </div>
-                <div class="status">
-                    <div class="image">
-                        <a href="#home"><img src="logo.jpg" alt="" class="image"></a>
-                    </div>
-                    <p>Home</p>
+                    <p>Sandip</p>
                 </div>
             </div>
 
